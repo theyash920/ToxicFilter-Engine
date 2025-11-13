@@ -1,13 +1,13 @@
 import os
 import io
 import sys
-import keras
+from tensorflow import keras
 import pickle
 from PIL import Image
 from hate.logger import logging
 from hate.constants import *
 from hate.exception import CustomException
-from keras.utils import pad_sequences
+from tensorflow.keras.utils import pad_sequences
 from hate.configuration.gcloud_syncer import GCloudSync
 from hate.components.data_transformation import DataTransformation
 from hate.entity.config_entity import DataTransformationConfig
